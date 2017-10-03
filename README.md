@@ -34,3 +34,18 @@ var age = new Promise()
     .Execute()
     .CastTo<int>();
 ```
+
+## Use Lambda functions
+
+```csharp
+var age = new Promise()
+    .Then(() => new Dictionary<string, int> {
+        {"Barack Obama", 56},
+        {"Albert Einstein", 76}
+    })
+    .Then((Dictionary<string, int> persons) => {
+        return persons.Sum(p => p.Value);
+    })
+    .Execute()
+    .CastTo<int>();
+```
