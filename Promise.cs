@@ -227,6 +227,8 @@ public class Promise {
         while (this.IsRunning) {
             Task.Delay(1);
         }
+
+        return this;
     }
 
     /// <summary>
