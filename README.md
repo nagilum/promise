@@ -1,6 +1,6 @@
 # Promise
 
-C# Promise library
+C# Promise-like library
 
 Yes it handles promises within promises.
 
