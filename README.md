@@ -49,3 +49,23 @@ var age = new Promise()
     .Execute()
     .CastTo<int>();
 ```
+
+## Properties
+
+```csharp
+// Indicates whether or not the promise is still executing.
+bool IsRunning
+
+// Output of the last function.
+object Result
+```
+
+## Helper functions
+
+```csharp
+// Attempt to cast the Result to given type.
+CastTo<T>()
+
+// Wait for the promise to finish executing.
+Wait()
+```
